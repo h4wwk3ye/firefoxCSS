@@ -1,7 +1,7 @@
 # FirefoxCss
 Custom userChrome.css for firefox based on [Material Fox](https://github.com/muckSponge/MaterialFox) and [Flying Fox](https://github.com/akshat46/FlyingFox) with few small changes.
 
-<img src='/chrome/icons/demo.gif' width="838px" height="602px"/>
+<img src='/chrome/icons/demo.gif' width="838px" height="472px"/>
 
 ## Installation
 #### Better use Material Fox and Flying Fox and modify them according to your needs.
