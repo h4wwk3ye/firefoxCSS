@@ -1,6 +1,8 @@
 # FirefoxCss
 Custom userChrome.css for firefox based on [Material Fox](https://github.com/muckSponge/MaterialFox) and [Flying Fox](https://github.com/akshat46/FlyingFox) with few small changes.
 
+<img src='/chrome/icons/demo.gif' width="250px" height="250px"/>
+
 ## Installation
 #### Better use Material Fox and Flying Fox and modify them according to your needs.
 - Follow the installation instruction on Flying Fox page. Basically paste the chrome folder and user.js on your profile folder and export config.json on Tree Style Tab options page (or use the custom.css file). 
