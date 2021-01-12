@@ -13,9 +13,9 @@
   "insertNewTabFromPinnedTabAt": -1,
   "lastDraggedTabs": {
     "tabIds": [
-      2
+      10
     ],
-    "urlsDigest": "e931878b26185ccd61e1f0e7d8f1d4d55bb88183"
+    "urlsDigest": "a34a7cc8bee05a202953adab05f9a36f7901fa5e"
   },
   "maxTreeLevel": -2,
   "migratedBookmarkUrls": [
@@ -39,16 +39,16 @@
   "showNewTabActionSelector": false,
   "sidebarPosition": 2,
   "syncDeviceInfo": {
-    "timestamp": 1610442679597
+    "timestamp": 1610445287001
   },
   "syncDevices": {
     "undefined": {
-      "timestamp": 1610442679597
+      "timestamp": 1610445286593
     }
   },
   "syncDevicesLocalCache": {
     "undefined": {
-      "timestamp": 1610442679597
+      "timestamp": 1610445287001
     }
   },
   "syncParentTabAndOpenerTab": false,
