@@ -66,7 +66,7 @@ tab-item:not(:hover) tab-closebox {
 
 tab-item:not(pinned) tab-closebox{
   position     : absolute;
-  right        : calc(10px + (10px * var(--favicon-shift)));
+  right        : calc(-50px + (10px * var(--favicon-shift))); /*not showing the icon using double click*/
   height       : 25px;
   padding-top  : 5px;
   background   : var(--close-box-background);
@@ -101,7 +101,7 @@ tab-item:not(pinned) tab-closebox{
 }
 
 :root.right tab-item:hover tab-favicon, :root.right tab-favicon {
-  transform: translateX(calc(30px + (10px * var(--favicon-shift))));
+  transform: translateX(calc(5px + (10px * var(--favicon-shift))));
 }
 
 :root.right tab-item:hover tab-favicon 
@@ -118,7 +118,7 @@ tab-item:not(pinned) tab-closebox{
 
 .newtab-button-box {
   border: none !important;
-  margin: 0 50px;
+  margin: 0 10px;
 }
 
 .newtab-button {

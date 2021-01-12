@@ -1,0 +1,39 @@
+/*AGENT_SHEET*/
+
+/* Base Theme */
+@import url(./css/base.css);
+
+/* Pop-ups, Context Menus, Dropdowns, etc */
+@import url(./css/context.css);
+
+/* Base Tags Theme */
+@import url(./css/tags.css);
+
+/* Pages */
+@import url(./css/pagesChrome.css);
+
+/* Icons */
+@import url(./css/icons.css);
+
+/* Colors */
+/* Dark */
+@import url(./css/colors/tags-dark.css);
+@import url(./css/colors/context-dark.css);
+@import url(./css/colors/base-dark.css);
+@import url(./css/colors/pagesChrome-dark.css);
+
+/* Light */
+@import url(./css/colors/tags-light.css);
+@import url(./css/colors/context-light.css);
+@import url(./css/colors/base-light.css);
+@import url(./css/colors/pagesChrome-light.css);
+
+/*
+@supports -moz-bool-pref("pref.here") {
+*/
+
+:root {
+	--uwp-accent-color: -moz-win-accentcolor; /* Accent color */
+	--uwp-accent-text: -moz-win-accentcolortext; /* Accent color text */
+}
+

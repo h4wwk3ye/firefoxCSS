@@ -1,0 +1,812 @@
+/* about: specific pages */
+
+@-moz-document url-prefix("chrome://"), regexp("about:(?!blank).*") {
+
+	treecol {
+		border-inline-start-width: 0px !important;
+	}
+	listheader {
+		border-bottom: 0px !important;
+	}
+	richlistbox {
+		border: none !important;
+	}
+	.menulist-label-box {
+		border: none !important;
+	}
+	.menulist-dropmarker {
+		padding-right: 0px !important;
+	}
+	.menulist-label-box {
+		padding-left: 0px !important;
+	}
+	resizer {
+		display: none !important;
+	}
+	* {
+		outline: none !important;
+	}
+	.dialogBox {
+		background: var(--uwp-global-back) !important;
+		border: 1px solid #333333 !important;
+		border-radius: 0px !important;
+		color: var(--uwp-global-front) !important;
+		box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5) !important;
+	}
+	.groupbox-title {
+		background: transparent !important;
+		border-bottom: 0px !important;
+		padding: 0px !important;
+	}
+	.dialogBox > caption {
+		padding: 0px !important;
+	}
+	.dialogOverlay[topmost="true"] {
+		background-color: rgba(0,0,0,0.6) !important;
+	}
+	dialog {
+		background: transparent !important;
+	}
+	dialog.prefwindow[type="child"], #history[windowtype="Update:History"] {
+		background: black !important;
+		color: white !important;
+		padding-top: 0px !important;
+		padding-bottom: 0px !important;
+		padding-inline-start: 0px !important;
+		padding-inline-end: 0px !important;
+	}
+	#history[windowtype="Update:History"] #historyItems {
+		border: none !important;
+		border-radius: 0px !important;
+	}
+	.prefpane {
+		background: black !important;
+		color: white !important;
+	}
+	separator.groove:not([orient="vertical"]) {
+		border-top: 0px !important;
+	}
+	.advanced-panel {
+		background-color: black !important;
+		border: none !important;
+	}
+	.windowDialog {
+		color: white !important;
+	}
+	.list > scrollbox > .scrollbox-innerbox {
+		border: none !important;
+	}
+	window {
+		background: var(--uwp-global-back) !important;
+		color: var(--uwp-global-front) !important;
+	}
+
+	:root > * {
+		font-size: 14px !important;
+	}
+
+	html.private {
+		--in-content-page-background: #25003e !important;
+	}
+
+}
+
+/* Extra stuff */
+@-moz-document url-prefix("chrome://"), regexp("about:(?!blank).*") {
+	/* Fixes for FF62~ Placed here due to CSS order priority */
+	.help-button > .text-link > hbox {
+		margin-top: 2px !important;
+	}
+	/*END*/
+	.sidebar-footer-button > .text-link {
+		height: 40px !important;
+		margin-inline-start: 0px !important;
+		padding-left: 14px !important;
+		color: var(--uwp-global-front) !important;
+	}
+	.sidebar-footer-button > .text-link:hover {
+		border-radius: 0px !important;
+		color: var(--uwp-global-front) !important;
+	}
+	.sidebar-footer-button {
+		padding: 0px !important;
+	}
+	.sidebar-footer-button > .text-link > hbox {
+		margin-top: 10px !important;
+	}
+	.sidebar-footer-button:last-of-type {
+		margin-bottom: 8px !important;
+	}
+	.sidebar-footer-label {
+		font-size: 13px !important;
+		margin: 0px !important;
+		padding-left: 10px !important;
+		line-height: 1.4em !important;
+		padding-bottom: 1px !important;
+	}
+	.sidebar-footer-icon {
+		height: 18px !important;
+		width: 18px !important;
+		margin: 0px !important;
+	}
+	.sidebar-footer-link {
+		padding-left: 40px !important;
+		height: 40px !important;
+		fill: var(--uwp-global-front) !important;
+		background-position-x: 14px !important;
+		background-position-y: 11px !important;
+		background-size: 18px !important;
+	}
+	.sidebar-footer-link-text {
+		color: var(--uwp-global-front) !important;
+		padding-bottom: 1px !important;
+	}
+	.sidebar-footer-list {
+		margin-left: 0px !important;
+		margin-bottom: 8px !important;
+	}
+	.category-icon {
+		height: 18px !important;
+		width: 18px !important;
+	}
+	#categories {
+		background-color: var(--uwp-pages-sidepanel) !important;
+		padding-top: 8px !important;
+		font-size: 12px !important;
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+		margin-top: 0px !important;
+	}
+	#categories > .category:not(richlistitem) > .category-name {
+		padding-left: 28px !important;
+		font-size: inherit !important;
+	}
+	#categories > .category:not(button) > .category-name {
+		padding-left: 10px !important;
+	}
+	#categories > .category:not(richlistitem) {
+		display: flex !important;
+		border: none !important;
+		padding: 0px !important;
+		margin: 0px !important;
+		min-height: 40px !important;
+		font-size: inherit !important;
+		color: var(--uwp-global-front) !important;
+		background-size: 16px !important;
+		background-repeat: no-repeat !important;
+		background-position-x: 12px !important;
+		background-position-y: 10px !important;
+	}
+	#categories > .category:not(button) {
+		min-height: 40px !important;
+		transition: none !important;
+		padding-left: 0px !important;
+		margin-inline-start: 0px !important;
+		border-radius: 0px !important;
+		cursor: default !important;
+	}
+	#categories > .category::before {
+		content: "";
+		width: 0 !important;
+		display: block !important; 
+		padding: 12px 3px !important;
+		margin-right: 6px !important;
+		background: transparent !important;
+	}
+	#categories > .category[selected] {
+		background-color: transparent !important;
+	}
+	#categories > .category[selected]::before {
+		background: var(--uwp-accent-color) !important;
+	}
+	#categories > .category[disabled]:not(button) {
+		opacity: 0.5 !important;
+	}
+	#categories > .category[hidden=""] {
+		display: none !important;
+	}
+	#categories > .category:hover {
+		background-color: var(--in-content-category-background-hover) !important;
+	}
+	#categories > .category:hover:active {
+		background-color: var(--in-content-category-background-active) !important;
+	}
+	#categories > .category[selected]:hover, #categories > .category.selected:hover {
+		background-color: var(--in-content-category-background-selected-hover) !important;
+	}
+	#categories > .category[selected]:hover:active, #categories > .category.selected:hover:active {
+		background-color: var(--in-content-category-background-selected-active) !important;
+	}
+	#sidebar, #category-box {
+		background-color: var(--uwp-pages-sidepanel) !important;
+	}
+	#categories hr {
+		margin: 0px !important;
+		border: none !important;
+		height: 20px !important;
+	}
+	.message-bar {
+		background: transparent !important;
+		color: white !important;
+	}
+	/* Font Fixes */
+	textbox {
+		font-size: 12px !important;
+	}
+	.anonymous-div {
+		line-height: inherit !important;
+	}
+	:root {
+		--in-content-sidebar-width: 250px !important;
+	}
+}
+/* Move this in the future */
+@-moz-document url-prefix("chrome://"), regexp("about:(?!blank).*") {
+	@media (max-width: 830px) {
+		#categories {
+			width: 40px !important;
+		}
+		#categories > .category {
+			padding-inline-start: 0px; !important;
+			margin-inline-end: 0px !important;
+			padding-right: 2px !important;
+		}
+		.main-content {
+			padding-left: 28px !important;
+			padding-right: 28px !important;
+		}
+		sidebar-footer-button > .text-link {
+			margin-inline-start: 0px !important;
+			padding-left: 0px !important;
+		}
+	}
+}
+
+/* Global Icons */
+@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {
+	/*.addons-icon {
+	    list-style-image: var(--mdl2-icons-puzzle) !important;
+		width: 16px !important;
+		height: 16px !important;
+	}
+	.help-icon {
+		list-style-image: var(--mdl2-icons-help) !important;
+		width: 16px !important;
+		height: 16px !important;
+	}
+	.preferences-icon {
+		list-style-image: var(--mdl2-icons-settings) !important;
+		width: 16px !important;
+		height: 16px !important;
+    }*/
+}
+
+@-moz-document url("about:newtab"), url("about:home") {
+	#snippets-container {
+		background: #2A2A2A !important;
+		border-top: none !important;
+		box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, .5) !important;
+	}
+	.search-wrapper input {
+		box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .5) !important;
+		border-radius: 0px !important;
+		transition: box-shadow 150ms !important;
+	}
+	.search-wrapper input:hover, .search-wrapper input[keepfocus] {
+		box-shadow: 0px 4px 20px 8px rgba(0, 0, 0, .5) !important;
+		transition: box-shadow 150ms !important;
+	}
+	.contentSearchSuggestionTable[hidden] {
+		box-shadow: none !important;
+	}
+	.contentSearchSuggestionTable {
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .5) !important;
+		transform: none !important;
+	}
+	.fixed-search .search-wrapper {
+		border-bottom: none !important;
+		box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, .5) !important;
+	}
+	.top-site-outer .tile {
+		background: var(--newtab-card-background-color) !important;
+	}
+	.top-site-outer .tile, .card-outer {
+		box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .5) !important;
+		transition: box-shadow 150ms, transform 150ms !important;
+	}
+	.top-sites-list:not(.dnd-active) .top-site-outer:-moz-any(.active, :focus, :hover) .tile, .card-outer:-moz-any(:hover, :focus, .active):not(.placeholder) {
+		box-shadow: 0px 5px 15px 6px rgba(0, 0, 0, .5) !important;
+		transform: translateY(-5px) !important;
+		transition: box-shadow 150ms, transform 150ms !important;
+	}
+	.top-site-outer .tile, .card-outer .card, .card-outer, .top-site-icon .rich-icon, .top-site-outer .top-site-icon, .top-site-outer .screenshot, .card-outer .card-preview-image-outer {
+		border-radius: 0px !important;
+	}
+	.top-site-outer .top-site-icon {
+		background-color: transparent !important;
+	}
+	.card-outer.placeholder .card, .card-outer > a:-moz-any(.active, :focus) .card {
+		box-shadow: none !important;
+	}
+	.card-outer.placeholder {
+		background: var(--newtab-card-background-color) !important;
+	}
+	.top-site-outer .context-menu-button, .card-outer .context-menu-button {
+		background-clip: padding-box !important;
+		background-position: 55% !important;
+		background-repeat: no-repeat !important;
+		transition-property: opacity !important;
+		transform: initial !important;
+	}
+	.top-site-outer .context-menu-button:hover:active, .card-outer .context-menu-button:hover:active {
+		background-clip: padding-box !important;
+		background-position: 55% !important;
+		background-repeat: no-repeat !important;
+	}
+	.search-wrapper .search-button {
+		background-color: transparent !important;
+		background-size: 16px 16px !important;
+		height: 100% !important;
+		border: none !important;
+	}
+	.search-wrapper .search-button:hover{
+		background-color: transparent !important;
+	}
+	.search-wrapper .search-button:hover:active {
+		background-color: transparent !important;
+		border: none !important;
+	}
+	.prefs-button button, .prefs-button button:hover:active {
+		background-color: transparent !important;
+		padding: 15px !important;
+		border: none !important;
+	}
+	.modal {
+		background: var(--uwp-global-back) !important;
+		border: 1px solid #333333 !important;
+		border-radius: 0px !important;
+		color: var(--uwp-global-front) !important;
+		box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5) !important;
+	}
+	.actions {
+		border: none !important;
+	}
+	.a11y-link-button:hover {
+		text-decoration: none !important;
+	}
+	.button:hover:not(.dismiss), .button:focus:not(.dismiss), .actions button:hover:not(.dismiss), .actions button:focus:not(.dismiss) {
+		box-shadow: none !important;
+	}
+	.icon {
+		background-color: transparent !important;
+        background-position: center center !important;
+		background-repeat: no-repeat !important;
+		background-size: 16px !important;
+		height: 16px !important;
+		border: none !important;
+		box-shadow: none !important;
+	}
+    .card-outer:hover .icon:not(.icon-spacer), .top-site-outer:hover .icon:not(.icon-spacer), .icon:not(.icon-spacer):hover, .icon:not(.icon-spacer):hover:active {
+		background-color: var(--uwp-tags-button) !important;
+	}
+	.card-outer .context-menu-button, .top-site-outer .context-menu-button {
+		top: 0px !important;
+		inset-inline-end: 0px !important;
+		box-shadow: none !important;
+	}
+	.card-outer:-moz-any(.active):not(.placeholder) {
+		z-index: 1 !important;
+	}
+	.snippet .block-snippet-button {
+		height: 12px !important;
+		background-color: transparent !important;
+		border: none !important;
+		fill: white !important;
+		-moz-context-properties: fill !important;
+	}
+	.snippet .block-snippet-button:active {
+		border: none !important;
+	}
+}
+
+@-moz-document url("about:newtab"), url("about:home"), url("about:privatebrowsing") {
+	.search-handoff-button, .search-handoff-button:hover {
+		border: none !important;
+	}
+	.search-handoff-button {
+		box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .5) !important;
+		transition: box-shadow 150ms, opacity 200ms, visibility 0s 2s  !important;
+	}
+	.fake-focus .search-handoff-button, .search-handoff-button:hover {
+		box-shadow: 0px 4px 20px 8px rgba(0, 0, 0, .5) !important;
+	}
+	.search-handoff-button .fake-textbox {
+		margin-left: 48px !important;
+	}
+	.fake-textbox {
+		color: var(--uwp-global-front) !important;
+	}
+}
+
+@-moz-document url("about:config") {
+	#configTree {
+		margin-bottom: 0px !important;
+		box-shadow: none !important
+	}
+}
+
+@-moz-document url-prefix("about:preferences") {
+	.help-button > .text-link {
+		border-radius: 0px !important;
+	}
+	.help-button > .text-link:hover:active {
+		color: white !important;
+	}
+	#defaultFontSize {
+		width: 100px !important;
+	}
+	.spotlight {
+		background-color: rgba(100,100,100,0.3) !important;
+		border-radius: 0px !important;
+	}
+	.fxaProfileImage.actionable {
+		border-width: 2px !important;
+		border-color: transparent !important;
+	}
+	.fxaProfileImage.actionable:hover {
+		border-color: #505050 !important;
+	}
+	.fxaProfileImage.actionable:hover:active {
+		border-color: var(--uwp-accent-color) !important;
+	}
+	.dialogTitleBar {
+		background-color: transparent !important;
+		border-bottom: none !important;
+	}
+	#categories > scrollbox > box {
+		padding: 0px !important;
+	}
+	.navigation {
+		background-color: var(--uwp-pages-sidepanel)  !important;
+	}
+	.accessory-button {
+		height: auto !important;
+	}
+	.extension-controlled {
+		fill: var(--uwp-global-front) !important;
+		-moz-context-properties: fill !important;
+		background-color: transparent !important;
+	}
+	description.indent, .indent > description {
+		color: #999 !important;
+	}
+	.updateSettingCrossUserWarningContainer {
+		background-color: transparent !important;
+	}
+	.navigation {
+		overflow-y: hidden !important;
+	}
+	.searchBarImage {
+		-moz-context-properties: fill, stroke;
+		fill: var(--chrome-secondary-background-color) !important;
+		stroke: gray !important;
+	}
+	.content-blocking-category {
+		border-radius: 0px !important;
+		border: none !important;
+	}
+	.content-blocking-category.selected {
+		background-image: linear-gradient(var(--uwp-accent-color), var(--uwp-accent-color)); !important;
+		background-blend-mode: multiply;
+		background-color: rgb(140,140,140) !important;
+		color: var(--uwp-accent-text) !important;
+	}
+	.sync-group {
+		border-radius: 0px !important;
+		background: transparent !important;
+		border: none !important;
+	}
+	/* Icons */
+	/*.category-icon {
+		width: 16px !important;
+		height: 16px !important;
+	}
+	#category-general > .category-icon {
+		list-style-image: var(--mdl2-icons-settings) !important;
+	}
+	#category-home > .category-icon {
+		list-style-image: var(--mdl2-icons-home) !important;
+	}
+	#category-search > .category-icon {
+		list-style-image: var(--mdl2-icons-search) !important;
+	}
+	#category-privacy > .category-icon {
+		list-style-image: var(--mdl2-icons-lock) !important;
+	}
+	#category-sync > .category-icon {
+		list-style-image: var(--mdl2-icons-sync) !important;
+	}
+	#updateSettingCrossUserWarning {
+		background-image: var(--mdl2-icons-info) !important;
+	}
+	.checkbox-icon[src="chrome://browser/skin/search-glass.svg"] {
+		background-image: var(--mdl2-icons-search) !important;
+		background-position: center center !important;
+		background-repeat: no-repeat !important;
+		padding-left: 16px !important;
+		box-sizing: border-box !important;
+	}
+	.checkbox-icon[src="resource://activity-stream/data/content/assets/glyph-topsites-16.svg"] {
+		background-image: var(--mdl2-icons-tiles) !important;
+		background-position: center center !important;
+		background-repeat: no-repeat !important;
+		padding-left: 16px !important;
+		box-sizing: border-box !important;
+	}
+	.checkbox-icon[src="resource://activity-stream/data/content/assets/glyph-info-16.svg"] {
+		background-image: var(--mdl2-icons-info) !important;
+		background-position: center center !important;
+		background-repeat: no-repeat !important;
+		padding-left: 16px !important;
+		box-sizing: border-box !important;
+	}*/
+	/* Fixes FF62~ */
+	.navigation > .help-button {
+		margin-bottom: 8px !important;
+		padding: 0px !important;
+	}
+	.help-button > .text-link {
+		margin-inline-start: 0px !important;
+		height: 40px !important;
+	}
+}
+
+@-moz-document url("about:downloads") {
+	#contentAreaDownloadsView {
+		padding: 0px !important;
+	}
+}
+
+@-moz-document url("about:addons") {
+	button.button-link {
+		background: transparent !important;
+		border: none !important;
+		cursor: default !important;
+		text-decoration: underline !important;
+		margin: 0px !important;
+		color: var(--uwp-accent-color) !important;
+	}
+	button.button-link:hover {
+		color: #999999 !important;
+	}
+	button.button-link:hover:active {
+		color: #666666 !important;
+		background: transparent !important;
+		border: none !important;
+	}
+	.addon label, .addon {
+		margin: 0px !important;
+		cursor: default !important;
+	}
+	.addon:not([selected]) {
+		border-bottom: 0px !important;
+	}
+	.button-box {
+		padding: 0px 5px !important;
+	}
+	.detail-view-container {
+		color: white !important;
+	}
+	.detail-row, .detail-row-complex {
+		text-shadow: none !important;
+	}
+	.icon[src=""] {
+		fill: var(--uwp-accent-text) !important;
+		-moz-context-properties: fill !important;
+	}
+	.addon-view[notification], .addon-view[pending] {
+		background-image: none !important;
+	}
+	.addon[privateBrowsing="true"] .privateBrowsing-notice-container {
+		margin-top: 5px !important;
+	}
+	.alert {
+		color: white !important;
+		background-color: black !important;
+	}
+	#header-utils-btn {
+		fill: white !important;
+	}
+	#header-utils-btn[open] {
+		padding-top: 3px !important;
+		padding-bottom: 3px !important;
+		background-color: #404040 !important;
+	}
+	.addon {
+		border: none !important;
+	}
+	#heading {
+		margin-top: 6px !important;
+	}
+	/* Icons */
+	.category-icon {
+		width: 16px !important;
+		height: 16px !important;
+	}
+	/* Fixes for FF62~ */
+	.addon {
+		border-inline-start: none !important;
+		border-bottom: none !important;
+		padding: 5px !important;
+	}
+}
+/* New HTML-based addons page */
+@-moz-document url("chrome://mozapps/content/extensions/aboutaddons.html") {
+	:root{
+	}
+	.rating-star {
+		fill: var(--uwp-accent-color) !important;
+	}
+	.addon.card {
+		background: transparent !important;
+		margin: 0px !important;
+		border: none !important;
+		border-radius: 0px !important;
+		cursor: default !important;
+	}
+	addon-card:not([expanded]) > .addon.card:hover {
+		background: var(--uwp-tags-richlistitem-hover) !important;
+	}
+	addon-card:not([expanded]) > .addon.card:hover:active {
+		background: var(--uwp-tags-richlistitem-active) !important;
+	}
+	.card-heading-icon {
+		fill: var(--uwp-accent-text) !important;
+		background-color: var(--uwp-accent-color) !important;
+		padding: 4px !important;
+	}
+	addon-card:not([expanded]) .card-contents {
+		width: calc(var(--section-width) - var(--card-padding) * 4 - var(--addon-icon-size) - 6px) !important;
+	}
+	addon-details, .addon-detail-row {
+		color: var(--uwp-global-front) !important;
+	}
+	recommended-themes-section {
+		display: none !important;
+	}
+	button.button-link {
+		text-decoration: none !important;
+	}
+	/* Icons */
+	.addon-icon[src="chrome://mozapps/skin/extensions/extensionGeneric.svg"] {
+		/* This should use --uwp-accent-text for fill */
+		background-image: var(--mdl2-icons-puzzle) !important;
+		background-position: center center !important;
+		background-repeat: no-repeat !important;
+		background-size: 32px !important;
+		padding-left: 36px !important;
+		box-sizing: border-box !important;
+		width: 40px !important;
+		height: 40px !important;
+	}
+}
+
+/*
+@-moz-document url("about:memory") {
+	button + button {
+		margin-left: 10px !important;
+	}
+	html {
+		background: black !important;
+	}
+	div.opsRow {
+		border: none !important;
+		border-radius: 0px !important;
+	}
+	div.section {
+		border: none !important;
+		border-radius: 0px !important;
+	}
+}
+*/
+@-moz-document url("about:url-classifier") {
+	.toggle-container-with-text + .toggle-container-with-text {
+		margin-top: 5px !important;
+	}
+}
+
+@-moz-document url("about:welcome") {
+	.firstrun-sign-in {
+		background: rgba(0, 0, 0, 0.5) !important;
+		color: white !important;
+		border: 1px solid var(--uwp-accent-color) !important;
+	}
+	.firstrun-sign-in .extra-links {
+		color: darkgray !important;
+	}
+}
+
+@-moz-document url("about:sessionrestore") {
+	#tabsToggle {
+		padding-right: 30px !important;
+	}
+	#tabsToggle::after {
+		background-size: 16px !important;
+		left: -4px !important;
+	}
+}
+
+@-moz-document url-prefix("about:reader") {
+	.toolbar {
+		border: none !important;
+		background-color: #2A2A2A !important;
+		width: 40px !important;
+	}
+	button {
+		fill: white !important;
+		background-color: transparent !important;
+		border: none !important;
+	}
+	button:hover {
+		background-color: #525252 !important;
+	}
+	.dropdown-popup {
+		/* Backdrop filter here... */
+		background-color: #2B2B2B !important;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5) !important;
+		border-radius: 0px !important;
+		border: none !important;
+		opacity: 0 !important;
+		transition: opacity 150ms, visibility 0s 2s !important;
+	}
+	.open > .dropdown-popup {
+		opacity: 1 !important;
+		transition: opacity 150ms !important;
+	}
+	.dropdown-arrow {
+		display: none !important;
+	}
+	.dropdown.open {
+		background-color: #666666 !important;
+	}
+	.narrate-row:not(:first-child) {
+		border: none !important;
+	}
+	.font-type-buttons > button > .description {
+		color: #BEBEBE !important;
+	}
+}
+
+@-moz-document url-prefix("about:tabcrashed") {
+	#reportBox {
+		background-color: transparent !important;
+	}
+}
+
+@-moz-document url-prefix("about:logins") {
+	.fxaccounts-avatar-button, .fxaccounts-avatar-button:hover:active {
+		background: transparent !important;
+		border: none !important;
+	}
+	.meta-info {
+		font-weight: 400 !important;
+		font-size: initial !important;
+	}
+	.edit-button, .delete-button {
+		background-position-x: 8px !important;
+		padding-left: 32px !important;
+	}
+	login-list, div.meta {
+		background-color: var(--uwp-global-back) !important;
+	}
+	.login-list-item {
+		border-bottom: none !important;
+	}
+	.container[role="dialog"] {
+		background: var(--uwp-global-back) !important;
+		border: 1px solid #333333 !important;
+		border-radius: 0px !important;
+		color: var(--uwp-global-front) !important;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+	}
+}

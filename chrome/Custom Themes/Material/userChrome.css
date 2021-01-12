@@ -1,0 +1,88 @@
+@import 'global/variables.css';
+@import 'global/global.css';
+@import 'icons/icons.css';
+@import 'tabbar/tabbar.css';
+@import 'navbar/navbar.css';
+@import 'personalbar/personalbar.css';
+@import 'popup/popup.css';
+@import 'urlbar/urlbar.css';
+@import 'findbar/findbar.css';
+@import 'toolbar/toolbar.css';
+
+
+.tabmodalprompt-button0 {
+	line-height: 100px !important;
+	font-family: "Montserrat", sans-serif !important;
+	font-size: 32px !important;
+	font-weight: semibold !important;
+	
+	appearance: none !important;
+	height: 100px !important;
+	width: auto !important;
+	background: #f3f0f1 !important;
+	margin-bottom: 25px !important;
+	border-radius: 32px !important;
+	text-align: center !important;
+	cursor: pointer !important;
+	transition: all 0.1s ease-in-out !important;
+}
+.tabmodalprompt-button0  {
+	box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2) !important;
+	color: #6f6cde !important;
+}
+.tabmodalprompt-button0:hover  {
+	opacity: 0.65 !important;
+	box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2) !important;
+}
+.tabmodalprompt-button0:active  {
+	opacity: 1 !important;
+	box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1) !important;
+}
+
+.tabmodalprompt-button1 {
+	line-height: 100px !important;
+	font-family: "Montserrat", sans-serif !important;
+	font-size: 32px !important;
+	font-weight: semibold !important;
+	
+	appearance: none !important;
+	height: 100px !important;
+	width: auto !important;
+	background: #f3f0f1 !important;
+	margin-bottom: 25px !important;
+	border-radius: 32px !important;
+	text-align: center !important;
+	cursor: pointer !important;
+	transition: all 0.1s ease-in-out !important;
+}
+.tabmodalprompt-button1  {
+	box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2) !important;
+	color: #FF3030 !important;
+}
+.tabmodalprompt-button1:hover  {
+	opacity: 0.65  !important;
+	box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2) !important;
+}
+.tabmodalprompt-button1:active  {
+	opacity: 1 !important;
+	box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1) !important;
+}
+
+.tabmodalprompt-mainContainer {
+	border: none !important;
+	border-radius: 25px !important;
+}
+
+.tabmodalprompt-buttonContainer {
+	padding-top: 25px !important;
+}
+
+.tabmodalprompt-infoBody {
+	font-size: 5rem  !important;
+	color: dimgray  !important;
+}
+
+.tabmodalprompt-checkbox {
+	color: lightslategray !important;
+	font-family: sans-serif !important;
+}

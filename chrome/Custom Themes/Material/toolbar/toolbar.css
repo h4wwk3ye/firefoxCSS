@@ -1,0 +1,95 @@
+#nav-bar-overflow-button {
+  list-style-image: url(icons8-expand-arrow-48.png) !important;
+  /*filter: brightness(0) invert(1) saturate(761%) hue-rotate(92deg) contrast(107%);*/
+}
+
+
+.titlebar-buttonbox-container {
+  margin: auto !important;
+  display: flex !important;
+}
+
+.titlebar-buttonbox {
+  height: 100% !important;
+  transform: scale(1.1) !important;
+}
+
+.titlebar-button {
+  width: 1.7vw !important;
+}
+
+#titlebar-buttonbox:-moz-window-inactive > * {
+  filter: grayscale(100%) !important;
+}
+
+
+
+.titlebar-min {
+  padding: 0px !important;
+  padding-left: 2px !important;
+  padding-right: 3px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-top: 2px !important;
+  margin-bottom: 0px !important;
+  background-color: transparent !important;
+  list-style-image: url(min-normal.png) !important;
+}
+
+.titlebar-min:hover {
+  list-style-image: url(min-hover.png) !important;
+}
+
+.titlebar-max {
+  padding: 0px !important;
+  padding-left: 2px !important;
+  padding-right: 3px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-top: 2px !important;
+  margin-bottom: 0px !important;
+  background-color: transparent !important;
+  list-style-image: url(max-normal.png) !important;
+}
+
+
+
+.titlebar-max:hover {
+  list-style-image: url(max-hover.png) !important;
+}
+
+.titlebar-close {
+  padding: 0px !important;
+  padding-left: 2px !important;
+  padding-right: 11px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-top: 2px !important;
+  margin-bottom: 0px !important;
+  background-color: transparent !important;
+  list-style-image: url(close-normal.png) !important;
+}
+
+
+.titlebar-close:hover {
+  list-style-image: url(close-hover.png) !important;
+}
+
+/* same as max */
+
+.titlebar-restore {
+  padding: 0px !important;
+  padding-left: 2px !important;
+  padding-right: 3px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-top: 2px !important;
+  margin-bottom: 0px !important;
+  background-color: transparent !important;
+  list-style-image: url(max-normal.png) !important;
+}
+
+
+.titlebar-restore:hover {
+  list-style-image: url(max-hover.png) !important;
+}

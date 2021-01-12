@@ -1,0 +1,282 @@
+/* Base tags moved into tags.css */
+
+/* chrome:// specific pages */
+
+@-moz-document regexp("chrome:\/\/(?!devtools).*") {
+	dialog, window, wizard {
+		background: var(--uwp-global-back) !important;
+		color: var(--uwp-global-front) !important;
+	}
+}
+
+@-moz-document url("chrome://browser/content/places/places.xhtml") {
+	#placesToolbar {
+		padding: 0px !important;
+		background-color: var(--uwp-global-back) !important;
+	}
+	toolbarbutton {
+		-moz-appearance: none !important;
+		padding: 8px !important;
+	}
+	toolbarbutton:not([disabled]):hover {
+		background-color: var(--uwp-context-menubar-hover) !important;
+	}
+	toolbarbutton:not([disabled]):hover:active {
+		background-color: var(--uwp-context-menubar-open) !important;
+	}
+	toolbarbutton > .toolbarbutton-icon {
+		fill: var(--uwp-global-front) !important;
+		fill-opacity: 1 !important;
+	}
+	toolbarbutton > .toolbarbutton-text:not([value]) {
+		display: none !important;
+	}
+	#placesMenu {
+		margin-inline-start: 0px !important;
+	}
+	#placesMenu > menu > .menubar-left {
+		display: none !important;
+	}
+	#placesMenu > menu > .menubar-text {
+		background-image: none !important;
+		padding-inline-end: unset !important;
+	}
+	#clearDownloadsButton {
+		-moz-appearance: none !important;
+		margin-left: 8px !important;
+		color: var(--uwp-accent-color) !important;
+	}
+	#clearDownloadsButton:hover {
+		color: #999999 !important;
+		background-color: transparent !important;
+	}
+	#clearDownloadsButton:active {
+		color: #666666 !important;
+	}
+	#editBookmarkPanelRows label {
+		color: var(--uwp-global-front) !important;
+	}
+	label {
+		color: var(--uwp-global-front) !important;
+	}
+	#placesViewsDeck, #detailsDeck {
+		background: var(--uwp-global-back) !important;
+	}
+}
+
+@-moz-document url("chrome://browser/content/aboutDialog.xhtml") {
+	#aboutDialogContainer {
+		background-color: transparent !important;
+		color: var(--uwp-global-front) !important;
+	}
+	#bottomBox {
+		background-color: var(--uwp-bottom-background) !important;
+	}
+	#rightBox {
+		-moz-context-properties: fill !important;
+		fill: var(--uwp-global-front) !important;
+	}
+	.button-text {
+		color: var(--uwp-global-front) !important;
+	}
+}
+
+@-moz-document url("chrome://browser/content/places/bookmarkProperties.xhtml"), url("chrome://browser/content/places/bookmarkProperties2.xhtml") {
+}
+
+@-moz-document url("chrome://mozapps/content/downloads/unknownContentType.xhtml") {
+	#unknownContentType {
+		background-color: var(--uwp-global-back) !important;
+	}
+	label, description {
+		color: var(--uwp-global-front) !important;
+	}
+	caption {
+		background-color: black !important;
+	}
+}
+
+@-moz-document url("chrome://global/content/appPicker.xhtml") {
+	#app-picker {
+		background-color: black !important;
+		color: white !important;
+	}
+}
+
+@-moz-document url("chrome://mozapps/content/handling/dialog.xhtml") {
+	#handling {
+		background-color: black !important;
+		color: white !important;
+	}
+	richlistbox {
+		background-color: black !important;
+		border: none !important;
+		-moz-appearance: none !important;
+	}
+}
+
+@-moz-document url("chrome://global/content/alerts/alert.xhtml") {
+	#alertBox {
+		box-shadow: none !important;
+		background-color: #1F1F1FF4 !important;
+		border: 1px solid #1F1F1F !important;
+		border-radius: 0px !important;
+		color: white !important;
+	}
+	#alertTitleLabel {
+		padding-top: 0px !important;
+	}
+	#alertNotification {
+		padding: 0px 20px 0px 0px !important;
+	}
+}
+
+@-moz-document url("chrome://global/content/commonDialog.xhtml") {
+	#checkbox {
+		margin-left: 23px !important;
+	}
+	#infoIcon {
+		-moz-context-properties: fill !important;
+		fill: var(--uwp-global-front) !important;
+	}
+}
+
+@-moz-document url("chrome://mozapps/content/profile/createProfileWizard.xhtml") {
+	label {
+		color: var(--uwp-global-front) !important;
+	}
+	.wizard-header {
+		background-color: transparent !important;
+		border-bottom: none !important;
+		height: 40px !important;
+		vertical-align: middle;
+	}
+	.wizard-header-label {
+		margin: 5.75px 12px 0px 12px !important;
+	}
+	.wizard-buttons-separator {
+		display: none !important;
+	}
+	.wizard-next-deck {
+		margin-left: 10px !important;
+	}
+}
+
+@-moz-document url("chrome://pippki/content/exceptionDialog.xhtml") {
+	#exceptiondialog {
+		background-color: black !important;
+	}
+	.dialog-content-box {
+		color: white !important;
+	}
+	caption {
+		background-color: transparent !important;
+		font-size: 16px !important;
+		font-weight: bold !important;
+	}
+	vbox > image {
+		display: none !important;
+	}
+	#locationGroupBox {
+		margin-top: 5px !important;
+	}
+}
+
+@-moz-document url("chrome://browser/content/pageinfo/pageInfo.xhtml") {
+	/* Change Header Size */
+	#topBar {
+		background-color: var(--uwp-header-background) !important;
+		color: lightgray !important;
+		border: none !important;
+	}
+	#mainDeck {
+		background-color: black !important;
+		color: white !important;
+	}
+	#permHostBox > label {
+		margin-top: 7px !important;
+	}
+	#permList {
+		border: none !important;
+		-moz-appearance: none !important;
+		color: white !important;
+	}
+	#feedListbox {
+		border: none !important;
+		background-color: black !important;
+		-moz-appearance: none !important;
+	}
+	#feedListbox > richlistitem {
+		padding-inline-start: 0px !important;
+		padding-inline-end: 0px !important;
+	}
+	#feedListbox richlistitem:not([selected="true"]) {
+	    border-bottom: 0px !important;
+	}
+	.text-link {
+		margin-inline-start: 0px !important;
+		margin-inline-end: 0px !important;
+	}
+	.permission {
+		border: none !important;
+	}
+	.permission:hover {
+		background-color: #191919 !important;
+		color: white !important;
+	}
+	.permission:hover:active {
+		background-color: #333333 !important;
+	}
+	caption {
+		background-color: transparent !important;
+		font-size: 16px !important;
+		font-weight: bold !important;
+	}
+	#imagecontainerbox {
+		background-color: black !important;
+		border: none !important;
+	}
+	#viewGroup > radio {
+		padding-left: 13px !important;
+		padding-right: 13px !important;
+		padding-top: 9.5px !important;
+		padding-bottom: 9.5px !important;
+	}
+	#viewGroup > radio[selected="true"] {
+		background-color: transparent !important;
+		color: white !important;
+		border-bottom: 3px solid var(--uwp-accent-color);
+		padding-bottom: 6.5px !important;
+	}
+	#viewGroup > radio > .radio-label-box {
+		outline: none !important;
+	}
+	#viewGroup > radio:hover {
+		background-color: rgb(60,60,60) !important;
+		color: white !important;
+	}
+}
+
+@-moz-document url("chrome://pippki/content/certViewer.xhtml") {
+	/* Finish This */
+	#certDetails {
+		background-color: black !important;
+	}
+}
+
+@-moz-document url("chrome://mozapps/content/update/history.xhtml") {
+	
+}
+
+@-moz-document url("chrome://browser/content/sanitize.xhtml") {
+	#SanitizeDialog {
+		background: black !important;
+		color: white !important;
+	}
+	caption {
+		background: transparent !important;
+	}
+}
+
+@-moz-document url("chrome://global/content/pictureinpicture/player.xhtml") {
+}

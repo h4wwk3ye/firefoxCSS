@@ -1,5 +1,5 @@
 /* in userContent for all the about:pages of firefox */
-/* Changes the default scrollbar */
+
 @-moz-document url-prefix("about:"),
 @-moz-document url-prefix("chrome://mozapps/content/extensions/aboutaddons.html") {
 	window,

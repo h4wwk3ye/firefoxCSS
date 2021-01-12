@@ -60,7 +60,9 @@ There's two main sidebar components.
 #sidebar-box #sidebar:hover {
     transform: translateX(0) !important;
     box-shadow: 2px 0 33px var(--shadow-color);
+	transition-delay: 0.7s;
 }
+
 
 #sidebar-box[sidebarcommand="viewBookmarksSidebar"] #sidebar {
     transform: translateX(0) !important;
@@ -115,7 +117,7 @@ toolbar {
 #TabsToolbar.browser-toolbar {
     display: inline-block !important;
     position: absolute;
-    top: 21px !important;
+    top: 24px !important;
     left: 10px;
     direction: rtl;
 }
