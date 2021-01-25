@@ -9,6 +9,6 @@ Custom userChrome.css for firefox based on [Material Fox](https://github.com/muc
 - Use Firefox Color scheme from Flying Fox page to give sidebar and title bar the same color.
 
 ## Please Note
-- ###### I have tested this only on Windows 10
+- ###### This is the MACOS branch and I have tested this with macOS Catalina 10.15.7 on Firefox esr v78 and Firefox Developer Edition v86
 - ###### The only major changes I have done is the toolbar section on Material Fox which changes the position and icons of the close/min/max and positions them on the same row with url bar.
 - ###### And the userContent.css file which changes the default scrollbar.
